@@ -11,7 +11,7 @@
     <header>
         <div class="logo-titulo">
             <img id="icono1" src="imagenes/logo.png" alt="Soluciones"> <!-- Imagen del logo de la empresa con un identificador único (id). -->
-            <h1 id="superior">HouseOfRock</h1> <!-- Título de la empresa con un identificador único (id) para estilo personalizado. -->
+            <h1 id="superior">HouseOfRockV3</h1> <!-- Título de la empresa con un identificador único (id) para estilo personalizado. -->
         </div>
         <nav class="navbar">
             <ul class="menu"> <!-- Lista no ordenada para el menú de navegación principal. -->
