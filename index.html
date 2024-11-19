@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declara el tipo de documento como HTML5 y establece el idioma a español. -->
+<head>
+    <meta charset="UTF-8"> <!-- Especifica la codificación de caracteres como UTF-8 para soportar caracteres especiales. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la visualización para adaptarse a diferentes tamaños de pantalla, esencial para el diseño responsivo. -->
+    <title>JamesBondMuseum.com</title> <!-- Título de la página que aparecerá en la pestaña del navegador. -->
+    <link rel="stylesheet" href="styles.css"> <!-- Vincula una hoja de estilo CSS externa para el diseño y la apariencia de la página. -->
+</head>
+<body>
+    <!-- Información del encabezado -->
+    <header>
+        <div class="logo-titulo">
+            <img id="icono1" src="imagenes/logo.png" alt="Soluciones"> <!-- Imagen del logo de la empresa con un identificador único (id). -->
+            <h1 id="superior"></h1> <!-- Título de la empresa con un identificador único (id) para estilo personalizado. -->
+        </div>
+        <nav class="navbar">
+            <ul class="menu"> <!-- Lista no ordenada para el menú de navegación principal. -->
+                <li><a href="index.html">Inicio</a></li> <!-- Enlace al inicio de la página. -->
+                <li class="dropup"> <!-- Elemento de menú con submenu (dropup). -->
+                    <button class="dropbtn">Nosotros</button> <!-- Botón que activa el submenú. -->
+                    <div class="dropup-content"> <!-- Contenedor para los elementos del submenú. -->
+                        <a href="mision.html">Misión</a> <!-- Enlace a la página de Misión. -->
+                        <a href="vision.html">Visión</a> <!-- Enlace a la página de Visión. -->
+                        <a href="principios.html">Principios</a> <!-- Enlace a la página de Principios. -->
+                    </div>
+                </li>
+                <li><a href="#">Servicios</a></li> <!-- Enlace a la sección de Servicios. -->
+                <li><a href="#">Contactos</a></li> <!-- Enlace a la sección de Contactos. -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Slider -->
+    <div class="slider">
+        <!-- Botones de radio para el control manual del slider -->
+        <input type="radio" name="radio-btn" id="radio1" checked> <!-- Botón de radio para la primera imagen, marcado por defecto. -->
+        <input type="radio" name="radio-btn" id="radio2"> <!-- Botón de radio para la segunda imagen. -->
+        <input type="radio" name="radio-btn" id="radio3"> <!-- Botón de radio para la tercera imagen. -->
+
+        <div class="slides"> <!-- Contenedor de las diapositivas del slider. -->
+            <!-- Primera diapositiva del slider -->
+            <div class="slide first">
+                <img src="./Imagenes/notr1.jpg" alt="Noticia 1"> <!-- Imagen para la primera diapositiva. -->
+                <div class="caption"> <!-- Contenedor de texto que acompaña la imagen. -->
+                    <h2>No Time To Die, Sponsors</h2>
+                    <p>on display in James Bond 007 Museum Nybro</p>
+                </div>
+            </div>
+            <!-- Segunda diapositiva del slider -->
+            <div class="slide">
+                <img src="./Imagenes/not2.jpg" alt="Noticia 2"> <!-- Imagen para la segunda diapositiva. -->
+                <div class="caption">
+                    <h2>Triumph Speed Triple 1200 </h2>
+                    <p>with special paint where all 25 James Bond film titles</p>
+                </div>
+            </div>
+            <!-- Tercera diapositiva del slider -->
+            <div class="slide">
+                <img src="./Imagenes/not3.jpg" alt="Noticia 3"> <!-- Imagen para la tercera diapositiva. -->
+                <div class="caption">
+                    <h2>James Bond 007 60 year Guitar</h2>
+                    <p>Duesenberg Alliance Series James Bond David Arnold Edition</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegación automática del slider (indicadores visuales) -->
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div> <!-- Botón automático para la primera imagen. -->
+            <div class="auto-btn2"></div> <!-- Botón automático para la segunda imagen. -->
+            <div class="auto-btn3"></div> <!-- Botón automático para la tercera imagen. -->
+        </div>
+
+        <!-- Navegación manual del slider (botones de control) -->
+        <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label> <!-- Botón manual para la primera imagen. -->
+            <label for="radio2" class="manual-btn"></label> <!-- Botón manual para la segunda imagen. -->
+            <label for="radio3" class="manual-btn"></label> <!-- Botón manual para la tercera imagen. -->
+        </div>
+    </div>
+
+    <!-- Sección principal de contenido -->
+    <main>
+        <section class="texto-imagen"> <!-- Sección que contiene texto e imágenes. -->
+            <div class="texto"> <!-- Contenedor para el texto explicativo. -->
+                <h2>Bienvenidos al Museo James Bond</h2> <!-- Encabezado de bienvenida. -->
+                <p>¡Prepárate para entrar en el fascinante mundo de espionaje, aventura y estilo con el Museo James Bond! En este lugar, la elegancia y la acción se encuentran en cada rincón. Explora las icónicas misiones que definieron al mejor agente secreto del mundo, desde sus gadgets más avanzados hasta los coches más lujosos que han dejado una huella imborrable en la historia del cine.
+
+                    Sumérgete en la historia de 007 a través de exposiciones interactivas, trajes originales, vehículos de alta tecnología y una selección exclusiva de objetos que dan vida a las aventuras más épicas del agente secreto británico. Revive los momentos más emocionantes de las películas, desde las primeras misiones hasta las más recientes, y descubre los secretos detrás de las cámaras que han convertido a James Bond en un ícono global.
+                    
+                    Ya sea que seas un fanático de las películas, un amante de la cultura pop o un curioso explorador, este museo te ofrece una experiencia única para vivir la emoción, el misterio y la intriga que solo James Bond puede ofrecer.
+                    
+                    ¡Tu misión, si decides aceptarla, es disfrutar y explorar todo lo que tenemos para ti!</p>
+                <br>
+            </div>
+            <div class="image-container"> <!-- Contenedor para la imagen que acompaña al texto. -->
+                <img src="imagenes/venta.png" alt="Soluciones"> <!-- Imagen representativa de los servicios de la empresa. -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Proyecto de Gabriel Obando. Todos los derechos reservados.</p> <!-- Información de derechos reservados en el pie de página. -->
+    </footer>
+</body>
+</html>
